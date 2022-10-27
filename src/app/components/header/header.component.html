@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light headerColor py-2 px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/"><img src="/assets/download.webp" alt=""/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/productslist" >products</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link"></a> -->
+        </li>
+
+      </ul>
+      <form class="d-flex me-3 position-relative">
+        <input class="form-control  bg-transparent  border-0 border-bottom border-dark rounded-0 w-100" type="search" placeholder="Search Products" aria-label="Search"/>
+        <button class="btn position-absolute top-0 end-0" type="submit">        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+        </button>
+      </form>
+      <a class="nav-link active me-3" aria-current="page" >
+          </a>
+      <a class="nav-link active position-relative" aria-current="page" >
+
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="add_shopping_cart"></mat-icon>
+        <span class="localMallIcon position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    1
+  </span></a>
+    </div>
+  </div>
+</nav>
