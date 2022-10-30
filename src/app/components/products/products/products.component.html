@@ -1,1 +1,46 @@
-<p>products works!</p>
+<div class='d-flex flex-column'>
+
+  <div class=' order-0 position-relative mb-5'>
+  <div class="col-11  h-100 bgColor2 position-static top-0 start-0">
+  </div>
+  <div class="col-11 position-absolute top-0 end-0  ">
+      <img  src="/assets/xh2_hero1.png.pagespeed.ic.R1s5jToz4V.png" class='imgHeder' alt="" />
+      <h1 class='position-absolute bottom-50 text-uppercase fw-bold'>products</h1>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page">Home Products
+            <!-- <Link to="/">Home</Link> <KeyboardArrowRightIcon/> height={'300px'} width={'100%'} -->
+          </a>
+        </li></ul>
+  </div>
+
+  </div>
+
+<div class='order-1 text-center '>
+<h2 class='fw-bold mb-3'>POPULAR PRODUCTS
+</h2>
+<p class='mb-5 text-center text-black-50 fw-semibold'>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra<br/> ornare, eros dolor interdum nulla.
+
+</p>
+<div class="  d-flex flex-row flex-wrap justify-content-evenly align-items-center">
+ <!-- <ng-component> -->
+  <div *ngFor="let product of lis" class="col-md-4 col-12 d-flex flex-wrap justify-content-center align-items-start">
+
+    <div class="card me-3 mb-5" >
+    <img src={{product.image}} class="card-img-top imageCaed"  alt="..." />
+    <div class="card-body">
+      <h5 class="card-title h2" (click)="openProductDetails(product._id)"> {{product.name}}</h5>
+      <p class="card-text">{{product.price|currency}}  </p>
+    </div>
+  </div>
+
+
+  </div>
+<!-- </ng-component> -->
+
+</div>
+
+</div>
+
+</div>
+

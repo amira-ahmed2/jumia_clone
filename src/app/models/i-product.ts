@@ -1,5 +1,6 @@
 export interface IProduct {
-  _id:number;
+
+  _id:any;
   name:string;
   quantity:number;
   price:number;
@@ -15,6 +16,8 @@ export interface IProduct {
   numOfReviews:number;
   user:string;
   createdAt:Date;
-  updatedAt:Date
+  updatedAt:Date;
+  id:any;
+
 
 }

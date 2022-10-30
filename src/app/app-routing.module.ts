@@ -8,7 +8,7 @@ const routes: Routes = [
 
         {path:'landing',component:LandingPageComponent},
   {path:'',redirectTo:'/landing',pathMatch:'full'},
-  {path: '',
+  {path: 'pros',
   loadChildren: () => import('src/app/components/products/products.module').then(m => m.ProductsModule)
   },
 

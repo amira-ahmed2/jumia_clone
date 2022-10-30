@@ -1,1 +1,42 @@
-<p>product-details works!</p>
+<div class="container mt-5 text-capitalize">
+  <div class="card mb-3 border-0" >
+    <div class="row g-0 justify-content-between">
+      <div class="col-md-4">
+        <img
+          src={{prd.image}}
+          class="img-fluid shadow w-100"
+
+        />
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title h1">{{prd.name}}</h5>
+          <p class="card-text fw-bold fs-5 textColor">
+            {{prd.price}}
+          </p>
+          <p class="card-text">
+            category :<span class="textColor">{{prd.category}}</span>
+          </p>
+          <p class="card-text">Availibility : In Stock</p>
+          <hr class="text-dark" />
+          <p class="card-text">{{prd.description}}</p>
+          <div >
+              <button type="button" class="py-1 bg-transparent rounded-5">
+               RemoveIcon
+              </button>
+            <input
+              type="number"
+              name="conter"
+              value="1"
+              class="w-25  mx-3 py-2 px-3 rounded-5 border-dark-50"
+            />
+              <button type="button" class="py-1 bg-transparent rounded-5">
+                AddIcon
+              </button>
+          </div>
+          <button type="button" class="btn bgColor rounded-0 my-4 py-3 px-5">add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
